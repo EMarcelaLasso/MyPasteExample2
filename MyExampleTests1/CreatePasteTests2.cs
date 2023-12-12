@@ -18,6 +18,7 @@ namespace CreatePaste.Tests
         public void SetupTest()
         {
             Driver = new FirefoxDriver();
+            Driver.Manage().Window.Maximize();
             Wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(30));
         }
         [TestCleanup]
